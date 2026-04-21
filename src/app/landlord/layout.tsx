@@ -10,6 +10,7 @@ const sideNavItems: NavItem[] = [
   { icon: "payments", label: "Payments", href: "/landlord/payments" },
   { icon: "group", label: "Tenants", href: "/landlord/tenants" },
   { icon: "gavel", label: "Disputes", href: "/landlord/disputes" },
+  { icon: "notifications", label: "Notifications", href: "/landlord/notifications" },
   { icon: "settings", label: "Settings", href: "/landlord/settings" },
 ];
 
