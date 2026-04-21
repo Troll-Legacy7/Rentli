@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Primary accent */
+  --color-primary: #cbf627;
+  --color-primary-dim: #bde70e;
+  --color-on-primary: #000000;
+
+  /* Surfaces (dark hierarchy — default) */
+  --color-bg: #000000;
+  --color-surface-0: #0a0a0a;
+  --color-surface-1: #0e0e0e;
+  --color-surface-2: #111111;
+  --color-surface-3: #1a1a1a;
+  --color-surface-4: #1c1c1c;
+  --color-surface-5: #262626;
+  --color-surface-bright: #2c2c2c;
+
+  /* Text */
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #a3a3a3;
+  --color-on-surface-muted: #888888;
+  --color-secondary-text: #e5e2e1;
+
+  /* Semantic */
+  --color-error: #ff7351;
+  --color-error-dim: #d53d18;
+  --color-success: #4ade80;
+  --color-outline: #333333;
+  --color-outline-variant: #484847;
+
+  /* Radius */
+  --radius-card: 1.5rem;
+  --radius-card-lg: 2rem;
+  --radius-card-xl: 2.5rem;
+
+  /* Fonts */
+  --font-headline: var(--font-plus-jakarta-sans), "Plus Jakarta Sans", sans-serif;
+  --font-body: var(--font-manrope), "Manrope", sans-serif;
+  --font-label: var(--font-inter), "Inter", sans-serif;
+}
+
+/* ═══ Dark mode (default) ═══ */
+:root,
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ═══ Light mode overrides ═══ */
+.light {
+  color-scheme: light;
+  --color-primary: #7aa500;
+  --color-primary-dim: #6b9200;
+  --color-on-primary: #ffffff;
+
+  --color-bg: #f5f5f5;
+  --color-surface-0: #ffffff;
+  --color-surface-1: #fafafa;
+  --color-surface-2: #f5f5f5;
+  --color-surface-3: #eeeeee;
+  --color-surface-4: #f0f0f0;
+  --color-surface-5: #e5e5e5;
+  --color-surface-bright: #d4d4d4;
+
+  --color-on-surface: #171717;
+  --color-on-surface-variant: #525252;
+  --color-on-surface-muted: #737373;
+  --color-secondary-text: #262626;
+
+  --color-error: #dc2626;
+  --color-error-dim: #b91c1c;
+  --color-success: #16a34a;
+  --color-outline: #d4d4d4;
+  --color-outline-variant: #a3a3a3;
+}
+
+.glass-card {
+  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.light .glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.stripe-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.08) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+.light .stripe-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.06),
+    rgba(0, 0, 0, 0.06) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+/* Dark scrollbar */
+.dark ::-webkit-scrollbar { width: 6px; }
+.dark ::-webkit-scrollbar-track { background: transparent; }
+.dark ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 3px; }
+
+/* Light scrollbar */
+.light ::-webkit-scrollbar { width: 6px; }
+.light ::-webkit-scrollbar-track { background: transparent; }
+.light ::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.15); border-radius: 3px; }
+
+/* Fix light mode border colors that use white/N opacity */
+.light .border-white\/5 { border-color: rgba(0, 0, 0, 0.08); }
+.light .border-white\/10 { border-color: rgba(0, 0, 0, 0.1); }
+.light .bg-bg\/80 { background-color: rgba(245, 245, 245, 0.8); }
+.light .bg-white\/5 { background-color: rgba(0, 0, 0, 0.03); }
+.light .bg-white\/20 { background-color: rgba(0, 0, 0, 0.08); }

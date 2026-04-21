@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /c/Users/PC/Desktop/Rentli/.*)",
+      "Bash(npm --version)",
+      "Bash(npx --version)",
+      "Bash(npm -v)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --turbopack --yes)",
+      "Bash(cp -r /c/Users/PC/Desktop/rentli-app/.gitignore /c/Users/PC/Desktop/rentli-app/eslint.config.mjs /c/Users/PC/Desktop/rentli-app/next-env.d.ts /c/Users/PC/Desktop/rentli-app/next.config.ts /c/Users/PC/Desktop/rentli-app/package.json /c/Users/PC/Desktop/rentli-app/postcss.config.mjs /c/Users/PC/Desktop/rentli-app/tsconfig.json /c/Users/PC/Desktop/Rentli/)",
+      "Bash(cp -r /c/Users/PC/Desktop/rentli-app/src /c/Users/PC/Desktop/Rentli/)",
+      "Bash(cp -r /c/Users/PC/Desktop/rentli-app/public /c/Users/PC/Desktop/Rentli/)",
+      "Bash(cp -r /c/Users/PC/Desktop/rentli-app/node_modules /c/Users/PC/Desktop/Rentli/)",
+      "Bash(npm install:*)",
+      "Bash(npx shadcn@latest add card badge avatar progress table button -y)",
+      "Bash(npx next:*)",
+      "Bash(npm run:*)",
+      "Read(//tmp/**)",
+      "Bash(taskkill //PID 1716 //F)",
+      "Bash(kill %1)",
+      "Bash(kill %2)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx prisma:*)",
+      "Bash(xargs wc:*)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3000)",
+      "Bash(tasklist /FI \"PID eq 13604\")",
+      "Bash(powershell -Command \"Get-Process -Id 13604 | Select-Object Name, Id, Path\")",
+      "Bash(powershell -Command \"Stop-Process -Id 13604 -Force\")",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(gh --version)",
+      "Bash(git --version)",
+      "Bash(gh auth *)"
+    ]
+  }
+}
